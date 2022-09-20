@@ -6,7 +6,7 @@
   line-height: 24px;
   color: #1d1d1d;
 }
-.input-search {
+.input-search-restaraunts {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -14,7 +14,7 @@
   line-height: 24px;
   color: #626262;
 }
-.restaraunt-city {
+.restaraunts__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -53,7 +53,7 @@
   font-size: 16px;
   line-height: 19px;
 }
-.links {
+.link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -67,7 +67,7 @@
   font-size: 13px;
   line-height: 15px;
 }
-.footer-bottom-line {
+.footer__privacy-text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
