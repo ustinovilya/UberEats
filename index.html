@@ -19,7 +19,7 @@
         />
       </a>
       <div>
-        <button type="button">Войти</button>
+        <button class="button-sign-in" type="button">Войти</button>
         <a href="#">
           <img src="./assets/icon_basket.svg" alt="Корзина" />
         </a>
@@ -27,64 +27,74 @@
     </header>
     <main>
       <section>
-        <input type="text" placeholder="Поиск по ресторанам и кухням" />
+        <input
+          class="input-search-reastaraunts"
+          type="text"
+          placeholder="Поиск по ресторанам и кухням"
+        />
       </section>
       <section>
-        <h2>Рестораны в Москве</h2>
+        <h2 class="restaraunts__title">Рестораны в Москве</h2>
         <ul>
           <li>
             <img src="./assets/restaraunt_1.jpg" alt="Обложка ресторана" />
-            <h3>Макдоналдс — Газетный</h3>
-            <p>₽₽ • Бургеры</p>
-            <p>25 - 35 мин</p>
+            <h3 class="restaraunt__title">Макдоналдс — Газетный</h3>
+            <p class="restaraunt__price-cuisine">₽₽ • Бургеры</p>
+            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
           </li>
           <li>
             <img src="./assets/restaraunt_2.jpg" alt="Обложка ресторана" />
-            <h3>DimSum & Co - ЦДМ</h3>
-            <p>₽ • Японская • Китайская • Азиатская</p>
-            <p>40 - 50 мин</p>
+            <h3 class="restaraunt__title">DimSum & Co - ЦДМ</h3>
+            <p class="restaraunt__price-cuisine">
+              ₽ • Японская • Китайская • Азиатская
+            </p>
+            <p class="restaraunt__deliviry-timing">40 - 50 мин</p>
           </li>
           <li>
             <img src="./assets/restaraunt_3.jpg" alt="Обложка ресторана" />
-            <h3>ДвижОК — Манежная</h3>
-            <p>₽ • Американская • Европейская</p>
-            <p>35 - 45 мин</p>
+            <h3 class="restaraunt__title">ДвижОК — Манежная</h3>
+            <p class="restaraunt__price-cuisine">
+              ₽ • Американская • Европейская
+            </p>
+            <p class="restaraunt__deliviry-timing">35 - 45 мин</p>
           </li>
           <li>
             <img src="./assets/restarautn_4.jpg" alt="Обложка ресторана" />
-            <h3>НЯ — NHA</h3>
-            <p>₽₽ • Вьетнамская</p>
-            <p>30 - 40 мин</p>
+            <h3 class="restaraunt__title">НЯ — NHA</h3>
+            <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
+            <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
           </li>
           <li>
             <img src="./assets/restaraunt_5.jpg" alt="Обложка ресторана" />
-            <h3>Точка Дзы — Цветной</h3>
-            <p>₽₽ • Вьетнамская</p>
-            <p>25 - 35 мин</p>
+            <h3 class="restaraunt__title">Точка Дзы — Цветной</h3>
+            <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
+            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
           </li>
           <li>
             <img src="./assets/restaraunt_6.jpg" alt="Обложка ресторана" />
-            <h3>Cinnabon</h3>
-            <p>₽ • Выпечка • Десерты • Капкейки</p>
-            <p>25 - 35 мин</p>
+            <h3 class="restaraunt__title">Cinnabon</h3>
+            <p class="restaraunt__price-cuisine">
+              ₽ • Выпечка • Десерты • Капкейки
+            </p>
+            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
           </li>
           <li>
             <img src="./assets/restarautn_7.jpg" alt="Обложка ресторана" />
-            <h3>PIZZELOVE</h3>
-            <p>₽₽ • Пицца</p>
-            <p>15 - 25 мин</p>
+            <h3 class="restaraunt__title">PIZZELOVE</h3>
+            <p class="restaraunt__price-cuisine">₽₽ • Пицца</p>
+            <p class="restaraunt__deliviry-timing">15 - 25 мин</p>
           </li>
           <li>
             <img src="./assets/restaraunt_8.jpg" alt="Обложка ресторана" />
-            <h3>Zю кафе — Тверская</h3>
-            <p>₽₽ • Японская</p>
-            <p>25 - 35 мин</p>
+            <h3 class="restaraunt__title">Zю кафе — Тверская</h3>
+            <p class="restaraunt__price-cuisine">₽₽ • Японская</p>
+            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
           </li>
           <li>
             <img src="./assets/restaraunt_9.jpg" alt="Обложка ресторана" />
-            <h3>Bar BQ Cafe — Манежная</h3>
-            <p>₽₽₽ • Европейская</p>
-            <p>30 - 40 мин</p>
+            <h3 class="restaraunt__title">Bar BQ Cafe — Манежная</h3>
+            <p class="restaraunt__price-cuisine">₽₽₽ • Европейская</p>
+            <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
           </li>
         </ul>
       </section>
@@ -95,12 +105,12 @@
       </div>
       <div>
         <div>
-          <select name="selectLanguage" id="1">
+          <select class="select-language" name="selectLanguage" id="1">
             <option value="ru">Русский</option>
             <option value="en">English</option>
             <option value="de">Deutsch</option>
           </select>
-          <p>#UberEats</p>
+          <p class="hashtag"><span style="color: #49a144">#</span>UberEats</p>
           <ul>
             <li>
               <a
@@ -133,12 +143,17 @@
         </div>
         <ul>
           <li>
-            <a href="https://about.ubereats.com/" target="_blank" rel="help"
+            <a
+              class="link"
+              href="https://about.ubereats.com/"
+              target="_blank"
+              rel="help"
               >Об UberEats</a
             >
           </li>
           <li>
             <a
+              class="link"
               target="_blank"
               rel="details"
               href="https://www.uber.com/drive/delivery/"
@@ -147,6 +162,7 @@
           </li>
           <li>
             <a
+              class="link"
               target="_blank"
               rel="details"
               href="https://merchants.ubereats.com/"
@@ -157,6 +173,7 @@
         <ul>
           <li>
             <a
+              class="link"
               target="_blank"
               rel="search"
               href="https://www.ubereats.com/location"
@@ -165,6 +182,7 @@
           </li>
           <li>
             <a
+              class="link"
               target="_blank"
               rel="help"
               href="https://help.uber.com/ubereats/article/uber-eats-pricing"
@@ -172,11 +190,15 @@
             >
           </li>
           <li>
-            <a target="_blank" rel="help" href="https://help.uber.com/"
+            <a
+              class="link"
+              target="_blank"
+              rel="help"
+              href="https://help.uber.com/"
               >Помощь</a
             >
           </li>
-          <li><a target="_blank" rel="help" href="">FAQs</a></li>
+          <li><a class="link" target="_blank" rel="help" href="">FAQs</a></li>
         </ul>
       </div>
       <div>
@@ -194,14 +216,16 @@
         /></a>
       </div>
       <div>
-        <span>© 2017 Uber Technologies Inc.</span>
+        <span class="footer__privacy-text">© 2017 Uber Technologies Inc.</span>
         <a
+          class="link"
           href="https://www.uber.com/legal/ru/document/?_ga=2.234384669.248442120.1663081597-359412252.1663081597&country=united-states&lang=en&name=privacy-notice"
           target="_blank"
           rel="license"
           >Обработка персональных данных</a
         >
         <a
+          class="link"
           href="https://www.uber.com/legal/ru/document/?name=general-terms-of-use&country=united-states&lang=en"
           target="_blank"
           rel="license"
