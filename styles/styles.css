@@ -23,20 +23,20 @@ body {
 }
 
 .container {
-  width: 950px;
+  width: 956px;
   margin: 0 auto;
 }
 
 header {
-  margin-bottom: 24px;
+  margin-bottom: 56px;
 
-  border-bottom: 1px solid black;
+  box-shadow: 0px 0px 16px rgb(38 38 38 / 16%);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 26px 0;
 }
 
 .header__logo {
@@ -50,14 +50,17 @@ header {
 }
 
 .header__controls-button {
-  margin-right: 12px;
-
+  margin-right: 16px;
+  padding: 13px 19px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 24px;
   color: #1d1d1d;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .search {
@@ -67,18 +70,17 @@ header {
 
 .search__input {
   width: 100%;
-  padding: 4px 0;
-
+  margin-bottom: 56px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #626262;
-
   border: none;
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid rgba(117, 117, 117, 0.3);
   outline: none;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 
   cursor: pointer;
 }
@@ -97,7 +99,7 @@ header {
 }
 
 .restaraunts__title {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -111,21 +113,28 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 64px;
 }
 
 .restaraunts__card {
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .restaraunt__title {
+  margin-top: 16px;
+  margin-bottom: 4px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   color: #1d1d1d;
 }
 .restaraunt__price-cuisine {
+  margin-bottom: 4px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -134,6 +143,8 @@ header {
   color: #626262;
 }
 .restaraunt__deliviry-timing {
+  margin: 0;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -143,7 +154,7 @@ header {
 }
 
 footer {
-  background-color: #1d1d1d;
+  background: #262626;
 }
 
 .footer {
@@ -154,58 +165,95 @@ footer {
 .footer__logo {
   display: flex;
   justify-content: flex-start;
-  padding: 32px;
+  padding: 56px 0px 40px;
 
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer__information {
   display: flex;
   justify-content: space-between;
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-right: 110px;
+  padding-bottom: 48px;
 
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer__select-socials {
+  display: flex;
+  flex-direction: column;
+  padding-right: 90px;
+}
+.select-language {
+  position: relative;
+  padding: 12px 48px 12px;
+  margin-bottom: 33px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  width: 227px;
+  height: 40px;
+  color: #ffffff;
+  background: #3b3b3b;
+  border-radius: 3px;
+  border: none;
+  appearance: none;
 }
 
 .footer__stores {
   display: flex;
   justify-content: center;
-  padding: 32px 0;
+  padding: 40px 0;
 
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer__stores .footer__store:first-child {
-  margin-right: 12px;
+  margin-right: 42px;
 }
 
 .hashtag {
+  margin: 0px;
+  margin-bottom: 22px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  color: #ffffff;
 }
+
+.footer__socials {
+  display: flex;
+  margin-right: 140px;
+  justify-content: space-between;
+}
+
+.link-list {
+  margin-top: 0px;
+  margin-right: 128px;
+  line-height: 39px;
+}
+
 .link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-}
-.select-language {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 15px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer__privacy {
   display: flex;
   justify-content: space-between;
 
-  padding: 32px 0;
+  padding: 40px 0;
 }
 .footer__privacy-text {
   font-family: "Roboto";
@@ -218,6 +266,6 @@ footer {
 .scroll-top {
   position: absolute;
 
-  right: 12px;
-  bottom: 12px;
+  right: 171px;
+  bottom: 24px;
 }

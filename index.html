@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Uber Eats</title>
   </head>
   <body>
@@ -111,14 +117,14 @@
           <img src="./assets/footer_logo.svg" alt="Логотип UberEats" />
         </div>
         <div class="footer__information">
-          <div>
+          <div class="footer__select-socials">
             <select class="select-language" name="selectLanguage" id="1">
               <option value="ru">Русский</option>
               <option value="en">English</option>
               <option value="de">Deutsch</option>
             </select>
             <p class="hashtag"><span style="color: #49a144">#</span>UberEats</p>
-            <ul>
+            <ul class="footer__socials">
               <li>
                 <a
                   target="_blank"
@@ -151,7 +157,7 @@
               </li>
             </ul>
           </div>
-          <ul>
+          <ul class="link-list">
             <li>
               <a
                 class="link"
@@ -180,7 +186,7 @@
               >
             </li>
           </ul>
-          <ul>
+          <ul class="link-list">
             <li>
               <a
                 class="link"
@@ -229,7 +235,7 @@
           /></a>
         </div>
         <div class="footer__privacy">
-          <span class="footer__privacy-text"
+          <span style="color: #ffffff" class="footer__privacy-text"
             >© 2017 Uber Technologies Inc.</span
           >
           <a
