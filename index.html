@@ -10,229 +10,247 @@
   </head>
   <body>
     <header>
-      <a href="#">
-        <img
-          src="./assets/header_logo.svg"
-          width="120"
-          height="13"
-          alt="Логотип UberEats"
-        />
-      </a>
-      <div>
-        <button class="button-sign-in" type="button">Войти</button>
-        <a href="#">
-          <img src="./assets/icon_basket.svg" alt="Корзина" />
+      <div class="header container">
+        <a class="header__logo" href="#">
+          <img
+            src="./assets/header_logo.svg"
+            width="120"
+            height="13"
+            alt="Логотип UberEats"
+          />
         </a>
+        <div class="header__controls">
+          <button class="header__controls-button button-sign-in" type="button">
+            Войти
+          </button>
+          <a href="#">
+            <img src="./assets/icon_basket.svg" alt="Корзина" />
+          </a>
+        </div>
       </div>
     </header>
     <main>
-      <section>
-        <input
-          class="input-search-reastaraunts"
-          type="text"
-          placeholder="Поиск по ресторанам и кухням"
-        />
-      </section>
-      <section>
-        <h2 class="restaraunts__title">Рестораны в Москве</h2>
-        <ul>
-          <li>
-            <img src="./assets/restaraunt_1.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">Макдоналдс — Газетный</h3>
-            <p class="restaraunt__price-cuisine">₽₽ • Бургеры</p>
-            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restaraunt_2.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">DimSum & Co - ЦДМ</h3>
-            <p class="restaraunt__price-cuisine">
-              ₽ • Японская • Китайская • Азиатская
-            </p>
-            <p class="restaraunt__deliviry-timing">40 - 50 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restaraunt_3.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">ДвижОК — Манежная</h3>
-            <p class="restaraunt__price-cuisine">
-              ₽ • Американская • Европейская
-            </p>
-            <p class="restaraunt__deliviry-timing">35 - 45 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restarautn_4.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">НЯ — NHA</h3>
-            <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
-            <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restaraunt_5.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">Точка Дзы — Цветной</h3>
-            <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
-            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restaraunt_6.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">Cinnabon</h3>
-            <p class="restaraunt__price-cuisine">
-              ₽ • Выпечка • Десерты • Капкейки
-            </p>
-            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restarautn_7.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">PIZZELOVE</h3>
-            <p class="restaraunt__price-cuisine">₽₽ • Пицца</p>
-            <p class="restaraunt__deliviry-timing">15 - 25 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restaraunt_8.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">Zю кафе — Тверская</h3>
-            <p class="restaraunt__price-cuisine">₽₽ • Японская</p>
-            <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
-          </li>
-          <li>
-            <img src="./assets/restaraunt_9.jpg" alt="Обложка ресторана" />
-            <h3 class="restaraunt__title">Bar BQ Cafe — Манежная</h3>
-            <p class="restaraunt__price-cuisine">₽₽₽ • Европейская</p>
-            <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="search">
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Поиск по ресторанам и кухням"
+          />
+        </section>
+        <section class="restaraunts">
+          <h2 class="restaraunts__title">Рестораны в Москве</h2>
+          <ul class="restaraunts__list">
+            <li class="restaraunts__card">
+              <img src="./assets/restaraunt_1.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">Макдоналдс — Газетный</h3>
+              <p class="restaraunt__price-cuisine">₽₽ • Бургеры</p>
+              <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restaraunt_2.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">DimSum & Co - ЦДМ</h3>
+              <p class="restaraunt__price-cuisine">
+                ₽ • Японская • Китайская • Азиатская
+              </p>
+              <p class="restaraunt__deliviry-timing">40 - 50 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restaraunt_3.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">ДвижОК — Манежная</h3>
+              <p class="restaraunt__price-cuisine">
+                ₽ • Американская • Европейская
+              </p>
+              <p class="restaraunt__deliviry-timing">35 - 45 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restarautn_4.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">НЯ — NHA</h3>
+              <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
+              <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restaraunt_5.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">Точка Дзы — Цветной</h3>
+              <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
+              <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restaraunt_6.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">Cinnabon</h3>
+              <p class="restaraunt__price-cuisine">
+                ₽ • Выпечка • Десерты • Капкейки
+              </p>
+              <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restarautn_7.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">PIZZELOVE</h3>
+              <p class="restaraunt__price-cuisine">₽₽ • Пицца</p>
+              <p class="restaraunt__deliviry-timing">15 - 25 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restaraunt_8.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">Zю кафе — Тверская</h3>
+              <p class="restaraunt__price-cuisine">₽₽ • Японская</p>
+              <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
+            </li>
+            <li class="restaraunts__card">
+              <img src="./assets/restaraunt_9.jpg" alt="Обложка ресторана" />
+              <h3 class="restaraunt__title">Bar BQ Cafe — Манежная</h3>
+              <p class="restaraunt__price-cuisine">₽₽₽ • Европейская</p>
+              <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer>
-      <div>
-        <img src="./assets/footer_logo.svg" alt="Логотип UberEats" />
-      </div>
-      <div>
-        <div>
-          <select class="select-language" name="selectLanguage" id="1">
-            <option value="ru">Русский</option>
-            <option value="en">English</option>
-            <option value="de">Deutsch</option>
-          </select>
-          <p class="hashtag"><span style="color: #49a144">#</span>UberEats</p>
+      <div class="footer container">
+        <div class="footer__logo">
+          <img src="./assets/footer_logo.svg" alt="Логотип UberEats" />
+        </div>
+        <div class="footer__information">
+          <div>
+            <select class="select-language" name="selectLanguage" id="1">
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+              <option value="de">Deutsch</option>
+            </select>
+            <p class="hashtag"><span style="color: #49a144">#</span>UberEats</p>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  href="https://www.facebook.com/ubereats"
+                >
+                  <img
+                    src="./assets/facebook_logo.svg"
+                    alt="Логотип Facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  href="https://www.twitter.com/ubereats"
+                >
+                  <img src="./assets/twitter_logo.svg" alt="Логотип Twitter" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  href="https://www.instagram.com/ubereats"
+                >
+                  <img src="./assets/inst_logo.svg" alt="Логотип Instagram" />
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul>
             <li>
               <a
+                class="link"
+                href="https://about.ubereats.com/"
                 target="_blank"
-                rel="noopener noreferer"
-                href="https://www.facebook.com/ubereats"
+                rel="help"
+                >Об UberEats</a
               >
-                <img src="./assets/facebook_logo.svg" alt="Логотип Facebook" />
-              </a>
             </li>
             <li>
               <a
+                class="link"
                 target="_blank"
-                rel="noopener noreferer"
-                href="https://www.twitter.com/ubereats"
+                rel="details"
+                href="https://www.uber.com/drive/delivery/"
+                >Станьте партнёром по доставке</a
               >
-                <img src="./assets/twitter_logo.svg" alt="Логотип Twitter" />
-              </a>
             </li>
             <li>
               <a
+                class="link"
                 target="_blank"
-                rel="noopener noreferer"
-                href="https://www.instagram.com/ubereats"
+                rel="details"
+                href="https://merchants.ubereats.com/"
+                >Станьте парнёром-рестораном</a
               >
-                <img src="./assets/inst_logo.svg" alt="Логотип Instagram" />
-              </a>
             </li>
           </ul>
+          <ul>
+            <li>
+              <a
+                class="link"
+                target="_blank"
+                rel="search"
+                href="https://www.ubereats.com/location"
+                >Все города</a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                target="_blank"
+                rel="help"
+                href="https://help.uber.com/ubereats/article/uber-eats-pricing"
+                >Цены</a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                target="_blank"
+                rel="help"
+                href="https://help.uber.com/"
+                >Помощь</a
+              >
+            </li>
+            <li><a class="link" target="_blank" rel="help" href="">FAQs</a></li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a
-              class="link"
-              href="https://about.ubereats.com/"
-              target="_blank"
-              rel="help"
-              >Об UberEats</a
-            >
-          </li>
-          <li>
-            <a
-              class="link"
-              target="_blank"
-              rel="details"
-              href="https://www.uber.com/drive/delivery/"
-              >Станьте партнёром по доставке</a
-            >
-          </li>
-          <li>
-            <a
-              class="link"
-              target="_blank"
-              rel="details"
-              href="https://merchants.ubereats.com/"
-              >Станьте парнёром-рестораном</a
-            >
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a
-              class="link"
-              target="_blank"
-              rel="search"
-              href="https://www.ubereats.com/location"
-              >Все города</a
-            >
-          </li>
-          <li>
-            <a
-              class="link"
-              target="_blank"
-              rel="help"
-              href="https://help.uber.com/ubereats/article/uber-eats-pricing"
-              >Цены</a
-            >
-          </li>
-          <li>
-            <a
-              class="link"
-              target="_blank"
-              rel="help"
-              href="https://help.uber.com/"
-              >Помощь</a
-            >
-          </li>
-          <li><a class="link" target="_blank" rel="help" href="">FAQs</a></li>
-        </ul>
+        <div class="footer__stores">
+          <a
+            class="footer__store"
+            target="_blank"
+            rel="noopener noreferer"
+            href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277"
+          >
+            <img src="./assets/appstore_logo.png" alt="Логотип App Store" />
+          </a>
+          <a
+            class="footer__store"
+            target="_blank"
+            rel="noopener noreferer"
+            href="https://play.google.com/store/apps/details?id=com.ubercab.eats"
+            ><img src="./assets/googleplay_logo.png" alt="Логотип Google Play"
+          /></a>
+        </div>
+        <div class="footer__privacy">
+          <span class="footer__privacy-text"
+            >© 2017 Uber Technologies Inc.</span
+          >
+          <a
+            class="link"
+            href="https://www.uber.com/legal/ru/document/?_ga=2.234384669.248442120.1663081597-359412252.1663081597&country=united-states&lang=en&name=privacy-notice"
+            target="_blank"
+            rel="license"
+            >Обработка персональных данных</a
+          >
+          <a
+            class="link"
+            href="https://www.uber.com/legal/ru/document/?name=general-terms-of-use&country=united-states&lang=en"
+            target="_blank"
+            rel="license"
+            >Пользовательское соглашение</a
+          >
+        </div>
       </div>
-      <div>
-        <a
-          target="_blank"
-          rel="noopener noreferer"
-          href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277"
-          ><img src="./assets/appstore_logo.png" alt="Логотип App Store"
-        /></a>
-        <a
-          target="_blank"
-          rel="noopener noreferer"
-          href="https://play.google.com/store/apps/details?id=com.ubercab.eats"
-          ><img src="./assets/googleplay_logo.png" alt="Логотип Google Play"
-        /></a>
-      </div>
-      <div>
-        <span class="footer__privacy-text">© 2017 Uber Technologies Inc.</span>
-        <a
-          class="link"
-          href="https://www.uber.com/legal/ru/document/?_ga=2.234384669.248442120.1663081597-359412252.1663081597&country=united-states&lang=en&name=privacy-notice"
-          target="_blank"
-          rel="license"
-          >Обработка персональных данных</a
-        >
-        <a
-          class="link"
-          href="https://www.uber.com/legal/ru/document/?name=general-terms-of-use&country=united-states&lang=en"
-          target="_blank"
-          rel="license"
-          >Пользовательское соглашение</a
-        >
-      </div>
-      <a href="#"><img src="./assets/up.svg" alt="В начало страицы" /></a>
     </footer>
+    <a class="scroll-top" href="#">
+      <img src="./assets/up.svg" alt="В начало страицы" />
+    </a>
   </body>
 </html>
