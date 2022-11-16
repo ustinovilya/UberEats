@@ -48,13 +48,21 @@
           <h2 class="restaraunts__title">Рестораны в Москве</h2>
           <ul class="restaraunts__list">
             <li class="restaraunts__card">
-              <img src="./assets/restaraunt_1.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restaraunt_1.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">Макдоналдс — Газетный</h3>
               <p class="restaraunt__price-cuisine">₽₽ • Бургеры</p>
               <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restaraunt_2.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restaraunt_2.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">DimSum & Co - ЦДМ</h3>
               <p class="restaraunt__price-cuisine">
                 ₽ • Японская • Китайская • Азиатская
@@ -62,7 +70,11 @@
               <p class="restaraunt__deliviry-timing">40 - 50 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restaraunt_3.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restaraunt_3.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">ДвижОК — Манежная</h3>
               <p class="restaraunt__price-cuisine">
                 ₽ • Американская • Европейская
@@ -70,19 +82,31 @@
               <p class="restaraunt__deliviry-timing">35 - 45 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restarautn_4.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restarautn_4.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">НЯ — NHA</h3>
               <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
               <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restaraunt_5.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restaraunt_5.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">Точка Дзы — Цветной</h3>
               <p class="restaraunt__price-cuisine">₽₽ • Вьетнамская</p>
               <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restaraunt_6.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restaraunt_6.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">Cinnabon</h3>
               <p class="restaraunt__price-cuisine">
                 ₽ • Выпечка • Десерты • Капкейки
@@ -90,19 +114,31 @@
               <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restarautn_7.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restarautn_7.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">PIZZELOVE</h3>
               <p class="restaraunt__price-cuisine">₽₽ • Пицца</p>
               <p class="restaraunt__deliviry-timing">15 - 25 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restaraunt_8.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restaraunt_8.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">Zю кафе — Тверская</h3>
               <p class="restaraunt__price-cuisine">₽₽ • Японская</p>
               <p class="restaraunt__deliviry-timing">25 - 35 мин</p>
             </li>
             <li class="restaraunts__card">
-              <img src="./assets/restaraunt_9.jpg" alt="Обложка ресторана" />
+              <img
+                class="restaraunt__image"
+                src="./assets/restaraunt_9.jpg"
+                alt="Обложка ресторана"
+              />
               <h3 class="restaraunt__title">Bar BQ Cafe — Манежная</h3>
               <p class="restaraunt__price-cuisine">₽₽₽ • Европейская</p>
               <p class="restaraunt__deliviry-timing">30 - 40 мин</p>
@@ -118,14 +154,16 @@
         </div>
         <div class="footer__information">
           <div class="footer__select-socials">
-            <select class="select-language" name="selectLanguage" id="1">
-              <option value="ru">Русский</option>
-              <option value="en">English</option>
-              <option value="de">Deutsch</option>
-            </select>
+            <div class="select-wraper">
+              <select class="select-language" name="selectLanguage" id="1">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
             <p class="hashtag"><span style="color: #49a144">#</span>UberEats</p>
             <ul class="footer__socials">
-              <li>
+              <li class="footer__social">
                 <a
                   target="_blank"
                   rel="noopener noreferer"
@@ -137,7 +175,7 @@
                   />
                 </a>
               </li>
-              <li>
+              <li class="footer__social">
                 <a
                   target="_blank"
                   rel="noopener noreferer"
@@ -146,7 +184,7 @@
                   <img src="./assets/twitter_logo.svg" alt="Логотип Twitter" />
                 </a>
               </li>
-              <li>
+              <li class="footer__social">
                 <a
                   target="_blank"
                   rel="noopener noreferer"
@@ -157,7 +195,7 @@
               </li>
             </ul>
           </div>
-          <ul class="link-list">
+          <ul class="link-list list1">
             <li>
               <a
                 class="link"
@@ -186,7 +224,7 @@
               >
             </li>
           </ul>
-          <ul class="link-list">
+          <ul class="link-list list2">
             <li>
               <a
                 class="link"
@@ -239,14 +277,14 @@
             >© 2017 Uber Technologies Inc.</span
           >
           <a
-            class="link"
+            class="footer__privacy-text link"
             href="https://www.uber.com/legal/ru/document/?_ga=2.234384669.248442120.1663081597-359412252.1663081597&country=united-states&lang=en&name=privacy-notice"
             target="_blank"
             rel="license"
             >Обработка персональных данных</a
           >
           <a
-            class="link"
+            class="footer__privacy-text link"
             href="https://www.uber.com/legal/ru/document/?name=general-terms-of-use&country=united-states&lang=en"
             target="_blank"
             rel="license"
