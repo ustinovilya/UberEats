@@ -181,9 +181,8 @@ footer {
 
 .footer__information {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 32px;
-  padding-right: 110px;
   padding-bottom: 48px;
 
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
@@ -192,6 +191,12 @@ footer {
 .footer__select-socials {
   display: flex;
   flex-direction: column;
+
+  width: 34%;
+}
+
+.footer__select {
+  margin-bottom: 33px;
 }
 
 .select-language {
@@ -200,7 +205,6 @@ footer {
   height: 40px;
 
   padding: 12px 48px 12px;
-  margin-bottom: 33px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -229,29 +233,44 @@ footer {
   box-shadow: 0px 0px 0px 1px #ffffff;
 }
 
-.select-wraper {
+.select-wrapper {
   position: relative;
+
+  margin: 0;
+
+  width: 227px;
 }
 
-.select-wraper::before {
-  content: url(/assets/world.svg);
+.select-wrapper::before {
+  content: "";
 
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 16px;
   transform: translateY(-50%);
   z-index: 1;
 
+  width: 16px;
+  height: 16px;
+
+  background-image: url(/assets/world.svg);
+
   pointer-events: none;
 }
 
-.select-wraper::after {
-  content: url(/assets/dropdown.svg);
+.select-wrapper::after {
+  content: "";
 
   position: absolute;
-  top: 25%;
+  top: 50%;
   right: 8px;
   transform: translateY(-50%);
+  z-index: 1;
+
+  width: 14px;
+  height: 8px;
+
+  background-image: url(/assets/dropdown.svg);
 
   pointer-events: none;
 }
@@ -285,26 +304,25 @@ footer {
   justify-content: flex-start;
 }
 
-.footer__social:first-child {
+.footer__socials .footer__social:not(:last-child) {
   margin-right: 18px;
 }
 
-.footer__social:nth-child(2) {
-  margin-right: 18px;
-}
-
-.link-list {
+.footer__link-list1 {
   margin: 0;
 
   line-height: 39px;
-}
-.list1 {
-  flex-grow: 0.09;
-}
-.list2 {
-  flex-grow: 0.37;
+
+  width: 34%;
 }
 
+.footer__link-list2 {
+  margin: 0%;
+
+  line-height: 39px;
+
+  width: 32%;
+}
 .link {
   font-family: "Roboto";
   font-style: normal;
@@ -322,15 +340,8 @@ footer {
 .footer__privacy {
   display: flex;
   justify-content: flex-start;
-  padding: 40px 0;
-}
-
-.footer__privacy-text:first-child {
-  margin-right: 174px;
-}
-
-.footer__privacy-text:nth-child(2) {
-  margin-right: 148px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer__privacy-text {
@@ -339,6 +350,18 @@ footer {
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
+}
+
+.footer__privacy-copyright {
+  width: 34%;
+}
+
+.footer__privacy-personal {
+  width: 34%;
+}
+
+.footer__privacy-license {
+  width: 32%;
 }
 
 .scroll-top {
