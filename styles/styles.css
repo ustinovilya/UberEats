@@ -70,12 +70,11 @@ header {
 
 .search {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 56px;
 }
 
 .search__input {
   width: 100%;
-  margin-bottom: 56px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -391,7 +390,7 @@ footer {
   }
 }
 
-@media (min-width: 320px) and (max-width: 763px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 308px;
   }
