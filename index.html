@@ -307,5 +307,38 @@
     <a class="scroll-top" href="#">
       <img src="./assets/up.svg" alt="В начало страицы" />
     </a>
+    <div class="modal modal--closed">
+      <div class="modal__form">
+        <img
+          src="/assets/header_logo.svg"
+          class="modal__form-logo"
+          alt="Логотип UberEats"
+        />
+        <button class="modal__form-close" type="click"></button>
+        <label for="email" class="modal__label"
+          >Введите email
+          <input
+            id="email"
+            name="email"
+            class="modal__input modal__input--emal"
+            type="email"
+            placeholder="Email"
+          />
+        </label>
+        <label for="password" class="modal__label"
+          >Введите пароль
+          <input
+            id="password"
+            name="password"
+            class="modal__input modal__input--password"
+            type="password"
+            placeholder="Пароль"
+          />
+        </label>
+        <button class="modal__form-sing-in" type="submit">Войти</button>
+      </div>
+      <div class="modal__overlay"></div>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
